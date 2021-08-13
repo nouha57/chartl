@@ -1,0 +1,27 @@
+
+<!--the header-->
+<!-- sidBarToggler is a function that will enable us to open and close the sidebar -->
+<app-header (toggleSideBarForMe)= "sideBarToggler()"></app-header>
+
+
+<!--the container-->
+<!-- it consists of a sidebar, and content-->
+<mat-drawer-container class="light-theme" fxFlex fxLayout="column" fxLayoutGap="10px" style="height:100vh"> 
+    <mat-drawer fxFlex mode="side" [opened]="sideBarOpen" >
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+
+    <mat-drawer-content fxLayout="column"  >
+        
+        <router-outlet></router-outlet>
+      
+    </mat-drawer-content>
+
+ 
+</mat-drawer-container>
+
+
+<!--the footer-->
+<app-footer></app-footer>
+
+

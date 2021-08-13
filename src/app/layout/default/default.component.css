@@ -1,0 +1,23 @@
+body{
+    background-color:aliceblue;
+}
+
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+mat-drawer{
+    width: 300px;
+}
+
+
+mat-drawer-container{
+    height: 100%;
+    width:100%;
+}
+
+mat-drawer-content {
+    padding: 20px;
+}

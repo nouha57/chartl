@@ -1,0 +1,43 @@
+<div>
+    <app-widget-area [data]='bigChart'></app-widget-area>
+</div>
+
+<br>
+
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+<div  fxFlex="60" fxLayoutAlign="flex-end" flex="66" fxLayoutAlign="center" fxLayoutGap="25px" class="stats-cards"  style="width:60%" >
+
+    
+    <mat-card fxflex="15">
+       <app-widget-card label="Minimum Temperature" total="30" percentage=""></app-widget-card>
+    </mat-card>
+    <mat-card fxflex="15">
+        <app-widget-card label="Maximum Temperature" total="30" percentage=""></app-widget-card>
+        
+    </mat-card>
+    <mat-card fxflex="15" class="temp">
+        <app-widget-card  label="Minimum Humidity" total="30"></app-widget-card>
+     </mat-card>
+     <mat-card fxflex="15"  class="temp">
+        <app-widget-card  label="Maximum Humidity" total="30"></app-widget-card>
+     </mat-card>
+     
+   </div>
+   <div fxFlex="40"><app-widget-pie [data]='boxPlots'></app-widget-pie></div>
+</div>
+<br>
+
+<mat-divider></mat-divider>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">   <app-widget-area [data]='bigChart'></app-widget-area></div>
+    <div fxFlex="40">
+        <app-widget-pie [data]='boxPlots'></app-widget-pie>
+    </div>
+</div>
+
